@@ -12,13 +12,13 @@ const ProfileButtons = () => {
 			container mx-auto 2xl max-w-2xl flex flex-row justify-around gap-5 text-xs
 			">
 				<button className={btn}>Download CV
-					<a href="#">
+					<a>
 						<span className="inline-block ">
 							<BsDownload/>
 						</span>
 					</a>
 				</button>
-				<button className={`${btn} bg-[#2B3C4B] text-[#FFE071] hover:text-[#3D3D3D]`}><a href="#">Contact me</a></button>
+				<button className={`${btn} bg-[#2B3C4B] text-[#FFE071] hover:text-[#3D3D3D]`}><a>Contact me</a></button>
 			</div>
 		</section>
 	);

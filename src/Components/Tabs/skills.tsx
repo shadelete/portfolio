@@ -1,8 +1,5 @@
 import React from 'react';
 import {BsCodeSlash} from "react-icons/bs";
-import {MdBuild} from "react-icons/md";
-
-
 
 const TabsSkills = () => {
 
@@ -46,11 +43,11 @@ const TabsSkills = () => {
 					<hr className="rounded-md border-[#2B3C4B] border-t-8 min-w-[10rem]"/>
 
 					<div className="flex flex-rows flex-wrap justify-center gap-5 items-start min-w-[80%] pt-5">
-						{aboutDB.skills.map((el:any)=> {
+						{aboutDB.skills.map((el:any,i:number)=> {
 							return (
-								<div className='inline-flex gap-2 p-3 bg-[#2B3C4B] rounded-3xl items-center cursor-pointer hover:shadow-lg'>
-									<span className="text-prim font-md text-[1rem]">{el.lang}</span>
-									{el.sub ? <p className="text-[#B8BEC3]">{el.sub}</p> : ''}
+								<div key={el.i} className='inline-flex gap-2 p-3 bg-[#2B3C4B] rounded-3xl items-center cursor-pointer hover:shadow-lg'>
+									<span key={el.i} className="text-prim font-md text-[1rem]">{el.lang}</span>
+									{el.sub ? <p key={el.i} className="text-[#B8BEC3]">{el.sub}</p> : ''}
 								</div>
 							)
 						})}
@@ -64,8 +61,8 @@ const TabsSkills = () => {
 					<div className="flex flex-rows flex-wrap justify-center gap-5 items-center min-w-[80%] pt-5">
 						{aboutDB.abilities.map((el:any)=> {
 							return (
-								<div className='inline-flex gap-2 p-3 bg-[#2B3C4B] rounded-3xl items-center cursor-pointer hover:shadow-lg'>
-									<span className="text-[#B8BEC3]">{el}</span>
+								<div key={el.id} className='inline-flex gap-2 p-3 bg-[#2B3C4B] rounded-3xl items-center cursor-pointer hover:shadow-lg'>
+									<span key={el.id} className="text-[#B8BEC3]">{el}</span>
 								</div>
 							)
 						})}

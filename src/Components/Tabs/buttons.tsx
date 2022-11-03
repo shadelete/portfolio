@@ -1,5 +1,4 @@
 import React from 'react';
-import {BsDownload} from "react-icons/bs";
 import {Link, NavLink} from "react-router-dom";
 
 const btn = 'bg-transparent text-[#FFE071] py-4 px-8 rounded-[2rem] flex items-center ' +

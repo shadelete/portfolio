@@ -12,8 +12,8 @@ const ProfileInfo = () => {
 						<h1 className="text-[#fff] text-center font-medium text-3xl">Alexander <br/>Bondarenko</h1>
 						<p className="font-medium">Frontend developer</p>
 						<ul className="flex flex-row gap-3 text-2xl text-prim">
-							<li><a className="hover:text-prim" href="#"><BsLinkedin/></a></li>
-							<li><a className="hover:text-prim" href="#"><BsGithub/></a></li>
+							<li><a className="hover:text-prim" href="https://github.com/shadelete" rel="noreferrer" target='_blank'><BsGithub/></a></li>
+							<li><a className="hover:text-prim" href="https://www.linkedin.com/in/shadelete/" rel="noreferrer" target='_blank'><BsLinkedin/></a></li>
 						</ul>
 					</div>
 				</div>
