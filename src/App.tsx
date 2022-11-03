@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ProfileInfo from "./Components/Profile/info";
+import ProfileButtons from "./Components/Profile/buttons";
+import TabsButtons from "./Components/Tabs/buttons";
+import TabsPortfolio from "./Components/Tabs/portfiolio";
+import TabsSkills from "./Components/Tabs/skills";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+		<ProfileInfo/>
+		<ProfileButtons/>
+		<TabsButtons/>
+		<Routes>
+			<Route path='/' element={<TabsPortfolio/>}/>
+			<Route path='/about' element={<TabsSkills/>}/>
+		</Routes>
+	</>
   );
 }
 

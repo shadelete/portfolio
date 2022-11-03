@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './assets/fonts/Poppins-Medium.ttf'
+import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-dom";
+import ErrorPage from "./error-page";
+import TabsPortfolio from "./Components/Tabs/portfiolio";
+import TabsSkills from "./Components/Tabs/skills";
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+	  <BrowserRouter>
+	  	<App/>
+	  </BrowserRouter>
   </React.StrictMode>
 );
 
