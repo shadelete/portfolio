@@ -13,7 +13,7 @@ const Modal = (state:any) => {
 		">
 			<div
 				onClick={e=> e.stopPropagation()}
-				className="flex flex-row gap-5 container container mx-auto 2xl w-[auto] bg-[#fff] rounded-xl bg-[#142637] text-prim p-5"
+				className="flex flex-row gap-5 container container mx-auto 2xl w-[auto] rounded-xl bg-[#142637] text-prim p-5"
 			>
 				<a target="_blank" href="https://wa.me/+380953439787" className="text-3xl"><AiOutlineWhatsApp/></a>
 				<a target="_blank" href="https://t.me/drgbk" className="text-3xl"><FaTelegramPlane/></a>

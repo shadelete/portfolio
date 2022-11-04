@@ -24,7 +24,7 @@ const TabsPortfolio = () => {
 						<a href={el.url} target="_blank">
 							<div
 								style={{backgroundImage: el.urlImage}}
-								className="portfolio relative bg-cover min-h-[20rem] items-center justify-end cursor-pointer rounded-3xl flex flex-col"
+								className="portfolio relative bg-cover min-h-[10rem] sm:min-h-[20rem] items-center justify-end cursor-pointer rounded-3xl flex flex-col"
 							>
 								<div className="portfolio-item">
 									<h1 className="text-prim">{el.name}</h1>
