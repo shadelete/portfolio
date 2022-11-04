@@ -5,6 +5,7 @@ import TabsButtons from "./Components/Tabs/buttons";
 import TabsPortfolio from "./Components/Tabs/portfiolio";
 import TabsSkills from "./Components/Tabs/skills";
 import {Route, Routes} from "react-router-dom";
+import Modal from "./Components/elements/modal";
 
 function App() {
   return (
