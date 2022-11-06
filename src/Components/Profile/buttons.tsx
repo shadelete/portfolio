@@ -31,7 +31,7 @@ const ProfileButtons = () => {
 						</span>
 					</button>
 				</a>
-				<button onClick={()=>setModalState(true)} className={`${btn} bg-[#2B3C4B] text-[#FFE071] hover:text-[#3D3D3D]`}><a>Contact me</a></button>
+				<button onClick={()=>setModalState(true)} className={`${btn} bg-[#2B3C4B] text-[#FFE071] hover:text-[#3D3D3D]`}>Contact me</button>
 				{ modalState ? <Modal state={setModal}/> : ''}
 			</div>
 		</section>

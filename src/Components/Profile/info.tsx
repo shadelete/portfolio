@@ -6,7 +6,7 @@ const ProfileInfo = () => {
 			<div className="container mx-auto 2xl max-w-2xl">
 				<div className="profile-info__wrapper grid sm:grid-cols-[1fr_1fr] grid-cols-1 gap-2 sm:gap-0 items-center">
 					<div className="flex justify-center profile-info__photo">
-						<img className="border-[#FFE071] border-8 rounded-full max-w-[70%]" src="./photo.png" alt="photo"/>
+						<img className="border-[#FFE071] border-8 rounded-full max-w-[70%] p-[.2rem]" src={process.env.PUBLIC_URL + '/assets/img/photo.png'} alt="photo"/>
 					</div>
 					<div className="flex flex-col items-center gap-3 profile-info__text-block font-medium">
 						<h1 className="text-[#fff] text-center font-medium text-3xl">Alexander <br/>Bondarenko</h1>
